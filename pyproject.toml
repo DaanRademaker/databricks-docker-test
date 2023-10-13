@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "docker-test"
+version = "0.1.0"
+description = "This is a simple scratch project as an example to run python project on Databricks within Docker container"
+authors = ["Daan Rademaker <daanrademaker@royalfloraholland.com>"]
+packages = [{ include = "docker_test" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^0.19.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+isort = "^5.12.0"
+pyproject-flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
